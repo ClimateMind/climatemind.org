@@ -1,0 +1,22 @@
+.hero
+  background-color lightBlue
+  color darkGreen
+  padding 40px 20px
+  height 60vh
+
+  &__slogan
+    font-family titleFont
+    font-size 48px
+    font-weight 800
+    height 100%
+    display flex
+    align-items center
+    justify-content center
+
+    +above('tablet')
+      font-size 64px
+    +above('desktop')
+      font-size 78px
+
+  &__explainer
+    padding 20px 0

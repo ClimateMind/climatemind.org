@@ -1,0 +1,44 @@
+{
+  "name": "climatemind",
+  "private": false,
+  "description": "Landing page of climatemind.org",
+  "version": "0.1.0",
+  "author": "Lukas Ziegler <lukas@lukasziegler.com>",
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^6.0.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-stylus": "^2.7.0",
+    "gulp-uglify": "^3.0.2",
+    "rupture": "^0.6.2",
+    "stylus": "^0.54.5"
+  },
+  "keywords": [
+    "climate mind",
+    "climate change"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "deploy": "npm run build && node ./github-deploy",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ClimateMind/climatemind.github.io"
+  },
+  "bugs": {
+    "url": "https://github.com/ClimateMind/climatemind.github.io/issues"
+  }
+}

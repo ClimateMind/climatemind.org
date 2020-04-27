@@ -1,0 +1,39 @@
+@require "reset"
+global-reset()
+
+@require "rupture"
+rupture.scale = 0 640px 1024px
+rupture.scale-names = 'mobile' 'tablet' 'desktop'
+
+// general mixins
+content-container(padding = 15px)
+  max-width 1200px
+  margin 0 auto
+  padding 0 padding
+
+// base variables
+lightBlue = #CBF0FD
+darkBlue = #0079A1
+turquoise = #2B9F99
+darkGreen = #07373B
+
+bodyFont = bilo, sans-serif
+titleFont = atten-round-new, sans-serif
+
+// base styles
+body
+  font-family bodyFont
+  font-weight 400
+  line-height 1.2
+  overflow-y scroll
+  -webkit-font-smoothing antialiased
+  --cta-color orange
+
+p
+  font-weight 300
+
+// Module imports
+@require "layout"
+@require "header"
+@require "hero"
+@require "teaser"

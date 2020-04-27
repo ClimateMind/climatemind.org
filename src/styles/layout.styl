@@ -1,0 +1,11 @@
+.countdown
+  height 100vh
+  display flex
+  flex-direction column
+  align-items center
+  justify-content center
+  +above('desktop')
+    flex-direction row
+    &__visualization,
+    &__input
+      width 50%
