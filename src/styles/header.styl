@@ -1,11 +1,51 @@
 .header
-  color darkGreen
-  font-family titleFont
+  content-container(20px)
   padding 10px 20px
+  display flex
+  justify-content space-between
+  align-items center
 
   &__title
+    color darkTeal
+    font-family titleFont
     font-size 32px
     font-weight 500
 
   &__menu
     display none
+    +above('tablet')
+      display block
+
+.menu
+  display flex
+  font-family bodyFont
+  text-transform uppercase
+  font-weight 500
+
+  &__item
+    padding-left 20px
+
+  &__item-link
+    display inline-block
+    position relative
+    color darkTeal
+    text-decoration none
+    padding 10px 0
+
+    &:after
+      content ''
+      position absolute
+      width 0
+      height 4px
+      display block
+      margin-top 5px
+      right 0
+      background rgba(teal, 0.6)
+      transition width .2s ease
+      -webkit-transition width .2s ease
+
+    &:hover:after
+    &:focus:after
+      width 100%
+      left 0
+      background rgba(teal, 0.6)
