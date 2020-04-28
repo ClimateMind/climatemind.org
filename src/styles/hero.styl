@@ -1,22 +1,43 @@
 .hero
   background-color lightBlue
   color darkTeal
-  padding 40px 20px
+  padding 40px 32px
   height 60vh
+  min-height 320px
+  background-image url("images/climateMind.svg")
+  background-repeat no-repeat
+  background-size 150% // TODO fix px
+  background-position -20% 45%
+  +above('tablet')
+    min-height 400px
+    background-size 800px
+    background-position 10% 0
+  +above('desktop')
+    background-position center 10%
 
-  &__slogan
-    font-family titleFont
-    font-size 48px
-    font-weight 800
-    height 100%
+  &__content
+    content-container(0)
     display flex
     align-items center
-    justify-content center
-
+    justify-content flex-start
+    height 100%
     +above('tablet')
-      font-size 64px
-    +above('desktop')
-      font-size 78px
+      justify-content flex-end
 
-  &__explainer
-    padding 20px 0
+  &__slogan
+    display inline-block
+    font-family titleFont
+    font-size calc(40px + (84 - 40) * ((100vw - 320px) / (1440 - 320)))
+    font-weight 800
+    padding 250px 0 0 0
+    width 100%
+    +above('tablet')
+      padding 0 60px
+      width 50%
+
+  &__image
+    width 200px
+    height 212px
+    +above('desktop')
+      width 261px
+      height 276px

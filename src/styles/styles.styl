@@ -4,12 +4,7 @@ global-reset()
 @require "rupture"
 rupture.scale = 0 640px 1024px
 rupture.scale-names = 'mobile' 'tablet' 'desktop'
-
-// general mixins
-content-container(padding = 15px)
-  max-width 1200px
-  margin 0 auto
-  padding 0 padding
+gutter = 16px
 
 // base variables
 lightBlue = #CBF0FD
@@ -24,7 +19,7 @@ titleFont = atten-round-new, sans-serif
 body
   font-family bodyFont
   font-weight 400
-  line-height 1.2
+  line-height 1.3
   overflow-y scroll
   -webkit-font-smoothing antialiased
   --cta-color orange
@@ -32,8 +27,24 @@ body
 p
   font-weight 300
 
+// mixins
+content-container(padding = gutter)
+  max-width 1200px
+  margin 0 auto
+  padding 0 padding
+
+headline(fontSize)
+  font-family titleFont
+  font-size fontSize
+  font-weight 800
+
+subline(fontSize)
+  font-family titleFont
+  font-size fontSize
+  font-weight 500
+
 // Module imports
 @require "layout"
 @require "header"
 @require "hero"
-@require "teaser"
+@require "panels"
