@@ -1,18 +1,19 @@
 .hero
-  background-color lightBlue
-  color darkTeal
+  color white
   padding 40px 32px
   height 60vh
   min-height 320px
+  background-color darkBlue
   background-image url("images/climateMind.svg")
   background-repeat no-repeat
   background-size 150% // TODO fix px
   background-position -20% 45%
   +above('tablet')
     min-height 400px
-    background-size 800px
+    background-size 700px
     background-position 10% 0
   +above('desktop')
+    background-size 800px
     background-position center 10%
 
   &__content
