@@ -1,7 +1,7 @@
 .teaser
   position relative
-  background linear-gradient(90deg, darkBlue, teal)
-  color white
+  background linear-gradient(90deg, rgba(darkBlue, 0.85), rgba(teal, 0.85))
+  color darkTeal
   display flex
   justify-content center
   align-items center
@@ -13,7 +13,7 @@
     padding 100px 0 120px 0
 
   &__wrapper
-    margin 0 gutter
+    margin 0 gutterLarge
 
   &__content
     +above('tablet')
@@ -54,6 +54,7 @@
   &__wave-top
     position absolute
     top -1px
+    top 0
     left 0
     width 100%
     height 40px
@@ -62,7 +63,7 @@
     +above('tablet')
       height 50px
       background-image url('images/wave/wave-top.svg')
-      background-position-x 200%
+      background-position-x center
   &__wave-bottom
     position absolute
     bottom -1px
@@ -74,7 +75,7 @@
     +above('tablet')
       height 50px
       background-image url('images/wave/wave-bottom.svg')
-      background-position-x 200%
+      background-position-x center
 
 
 /*** ABOUT US ***/
@@ -88,7 +89,7 @@
     padding 40px 0 80px 0
 
   &__wrapper
-    margin 0 gutter
+    margin 0 gutterLarge
     display flex
     flex-direction column
     +above('tablet')
@@ -116,7 +117,7 @@
     width 220px
 
   &__headline
-    margin 12px gutter 0 gutter
+    margin 12px gutterLarge 0 gutterLarge
     headline(30px)
     +above('tablet')
       font-size 44px
@@ -160,13 +161,13 @@
     padding 60px 0 100px 0
 
   &__content
-    margin 0 gutter
+    margin 0 gutterLarge
     +above('tablet')
       margin 0 auto
       max-width 600px
 
   &__headline
-    margin 12px gutter 0 gutter
+    margin 12px gutterLarge 0 gutterLarge
     headline(30px)
     +above('tablet')
       font-size 44px

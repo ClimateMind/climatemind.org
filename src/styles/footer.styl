@@ -1,0 +1,114 @@
+.footer
+  position relative
+  background-color darkTeal
+  color white
+  padding 120px 0
+  +above('tablet')
+    padding 160px 0 100px 0
+  +above('desktop')
+    padding 180px 0
+
+  &__content
+    content-container(maxWidth: 1100px)
+    display flex
+    flex-direction column
+
+    +above('tablet')
+      flex-direction row
+      justify-content flex-start
+      flex-wrap wrap
+
+    +above('desktop')
+      justify-content space-around
+      align-items flex-end
+      flex-wrap nowrap
+
+    +above('desktop')
+      flex-wrap nowrap
+
+  &__decoration
+    pointer-events none
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+
+  &__wave
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 40px
+    background-image url('images/wave/wave-footer-mobile.svg')
+    background-position-x 100px
+    +above('tablet')
+      height 50px
+      background-image url('images/wave/wave-footer.svg')
+      background-position-x center
+
+  &__caption
+    subline(28px)
+
+  &__resources
+  &__contact
+    margin-top 80px
+    +above('tablet')
+      width 50%
+    +above('desktop')
+      width 25%
+      margin-top 0
+
+  &__logos
+    +above('tablet')
+      width 100%
+    +above('desktop')
+      width 40%
+
+  &__link
+    display block
+    margin-top 16px
+    subline(20px)
+    color green
+    text-decoration none
+    &:hover
+      text-decoration underline
+
+    &--credit
+      display inline
+      font-size 16px
+
+  &__climateMind
+    margin-bottom 40px
+    &-logo
+      width 277px
+      height 167px
+
+  &__socialMedia
+    display flex
+    & > *
+      margin-right 12px
+
+    &-icon
+      width w=44px
+      height w
+
+  &__credit
+    subline(16px)
+    margin-top 40px
+
+
+.icon-round
+  background-color green
+  color white
+  border 0
+  border-radius 50%
+  width w=44px
+  height w
+  cursor pointer
+  display flex
+  justify-content center
+  align-items center
+  &:hover
+  &:focus
+    background-color darken(green, 0.5)

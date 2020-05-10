@@ -4,7 +4,8 @@ global-reset()
 @require "rupture"
 rupture.scale = 0 640px 1024px
 rupture.scale-names = 'mobile' 'tablet' 'desktop'
-gutter = 20px
+gutterSmall = 20px
+gutterLarge = 36px
 
 // base variables
 darkBlue = #006080
@@ -28,8 +29,8 @@ p
   font-weight 300
 
 // mixins
-content-container(padding = gutter)
-  max-width 1200px
+content-container(padding = gutterLarge, maxWidth = 1200px)
+  max-width maxWidth
   margin 0 auto
   padding 0 padding
 
@@ -48,3 +49,4 @@ subline(fontSize)
 @require "header"
 @require "hero"
 @require "panels"
+@require "footer"
