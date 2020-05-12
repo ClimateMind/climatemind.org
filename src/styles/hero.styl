@@ -1,20 +1,27 @@
 .hero
+  position relative
   color white
   padding 40px gutterLarge
   height 60vh
   min-height 320px
   background-color darkBlue
-  background-image url("images/logos/climateMind-world.svg")
-  background-repeat no-repeat
-  background-size 150% // TODO fix px
-  background-position -20% 45%
   +above('tablet')
     min-height 400px
-    background-size 700px
-    background-position 10% 0
-  +above('desktop')
-    background-size 800px
-    background-position center 10%
+
+  &__image
+    position absolute
+    width 100%
+    height 100%
+    overflow visible
+
+    background-size 150% // TODO fix px
+    background-position -20% 45%
+    +above('tablet')
+      background-size 700px
+      background-position 10% 0
+    +above('desktop')
+      background-size 800px
+      background-position center 10%
 
   &__content
     content-container(0)
@@ -34,11 +41,5 @@
     width 100%
     +above('tablet')
       padding 0 60px
+      padding 0 60px 100px 60px
       width 50%
-
-  &__image
-    width 200px
-    height 212px
-    +above('desktop')
-      width 261px
-      height 276px

@@ -16,7 +16,13 @@ html(lang='en')
     link(rel='manifest' href='/site.webmanifest')
     meta(name='msapplication-TileColor' content='#006080')
     meta(name='theme-color' content='#006080')
+    script
+      include javascript/gtm.js
+
   body
+    noscript
+      iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-PK3JHMG"
+      height="0" width="0" style="display:none;visibility:hidden")
   
     header.header
       h1.header__title Climate Mind
@@ -32,6 +38,7 @@ html(lang='en')
     .hero
       .hero__content
         .hero__slogan Connect to climate&nbsp;change.
+        img.hero__image(src="images/logos/climateMind-world.svg")
       
     .teaser
       .teaser__wrapper
