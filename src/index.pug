@@ -16,6 +16,9 @@ html(lang='en')
     link(rel='manifest' href='/site.webmanifest')
     meta(name='msapplication-TileColor' content='#006080')
     meta(name='theme-color' content='#006080')
+    script(async src='https://www.googletagmanager.com/gtag/js?id=UA-165706180-1')
+    script
+      include javascript/ga.js
     script
       include javascript/gtm.js
 
@@ -25,7 +28,8 @@ html(lang='en')
       height="0" width="0" style="display:none;visibility:hidden")
   
     header.header
-      h1.header__title Climate Mind
+      h1.header__title 
+        a(href="#") Climate Mind
       .header__menu
         ul.menu
           li.menu__item
@@ -52,7 +56,7 @@ html(lang='en')
         .teaser__wave-top
         .teaser__wave-bottom
 
-    .about-us
+    .about-us#about
       h2.about-us__headline What is Climate Mind?
       .about-us__wrapper
 
@@ -95,12 +99,12 @@ html(lang='en')
           h3.footer__caption Useful links
           ul.footer__links
             li.footer__link-item
-              a(href="" target="_blank").footer__link Scientists Speak Up
+              a(href="https://scientistsspeakup.org/" target="_blank").footer__link Scientists Speak Up
             li.footer__link-item
-              a(href="" target="_blank").footer__link Ontology
+              a(href="https://docs.google.com/document/d/16Ot_5WPNOLUIrLkmusbMVnN827OEJKigrT2B8HP--Jk/edit" target="_blank").footer__link Ontology
             li.footer__link-item
-              a(href="" target="_blank").footer__link Resources
-            li.footer__link-item
+              a(href="https://drive.google.com/drive/folders/1LEvOzTCkPYS42OHfM_ogJAo9aBhjzQCr?usp=sharing" target="_blank").footer__link Resources
+            //li.footer__link-item
               a(href="" target="_blank").footer__link Media Library
         .footer__contact
           h3.footer__caption Contact
