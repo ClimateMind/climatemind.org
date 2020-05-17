@@ -98,7 +98,7 @@
       margin 0 auto
       padding 0 32px
       flex-direction row
-      max-width 1000px
+      max-width maxWidthSmall
     +above('desktop')
       padding 0 60px
 
@@ -190,3 +190,138 @@
     +above('tablet')
       font-size 20px
       margin 20px 0
+
+
+
+/*** TEAM section ***/
+.team
+  background-image linear-gradient(90deg, rgba(darkBlue, 0.85), rgba(teal, 0.85)), url("images/background/earth-patterns-unsplash-mobile.jpg")
+  background-repeat no-repeat
+  background-position center center
+  background-size cover
+  padding 40px gutterLarge
+  +above('tablet')
+    padding 40px gutterLarge 100px gutterLarge
+  +above('desktop')
+    padding 40px gutterLarge 80px gutterLarge
+    background-image linear-gradient(90deg, rgba(darkBlue, 0.85), rgba(teal, 0.85)), url("images/background/earth-patterns-unsplash.jpg")
+
+  &__wrapper
+    margin 0 auto
+    max-width maxWidthLarge
+
+  &__content
+    +above('tablet')
+      margin 60px auto
+
+  &__headline
+    headline(32px)
+    color white
+    margin 40px 0
+    +above('tablet')
+      font-size 44px
+      margin 32px 0
+    +above('desktop')
+      font-size 52px
+
+  &__subline
+    headline(28px)
+    color white
+    margin 32px 0
+    +above('tablet')
+      font-size 36px
+      margin 32px 0
+    +above('desktop')
+      font-size 40px
+
+  &__facts
+    margin-bottom 60px
+    display flex
+    flex-wrap wrap
+
+    & > *
+      margin 0 0 20px 0
+      max-width 320px
+      +above('tablet')
+        margin 0 20px 20px 0
+
+
+.card
+  color darkTeal
+  background-color white
+  border-radius 12px
+  overflow hidden
+  box-sizing border-box
+  +above('tablet')
+    width 280px
+    min-height 340px
+
+  &--facts
+    padding 40px 28px
+    text-align center
+
+  &__details
+    padding 12px 20px 16px 20px
+
+  &__image
+    width 100%
+
+  &__icon
+    display flex
+    justify-content center
+    align-items center
+    height 120px
+    padding-bottom 32px
+
+  &__description
+    emphasizedBody(16px)
+    margin 20px 0
+
+  &__link
+    emphasizedBody(16px)
+    &
+    &:visited
+      color darkBlue
+      text-decoration none
+    &:hover
+    &:active
+    &:focus
+      text-decoration underline
+
+.person
+  &__name
+    subline(24px)
+  &__role
+    emphasizedBody(16px)
+  &__links
+    margin-top 12px
+    display flex
+    justify-content space-between
+
+.person-list
+  display flex
+  flex-wrap wrap
+  & > *
+    margin 0 0 20px 0
+    max-width 320px
+    +above('tablet')
+      margin 0 20px 20px 0
+
+
+/*** Get Involved section ***/
+.participate
+  padding 40px gutterLarge
+
+  &__wrapper
+    margin 0 auto
+    max-width maxWidthLarge
+
+  &__headline
+    headline(32px)
+    color darkTeal
+    margin 40px 0
+    +above('tablet')
+      font-size 44px
+      margin 32px 0
+    +above('desktop')
+      font-size 52px
