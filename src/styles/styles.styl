@@ -29,6 +29,16 @@ body
 p
   font-weight 300
 
+.link
+  color green
+  text-decoration none
+  emphasizedBody(20px)
+  +above('tablet')
+    font-size 24px
+  &:hover
+  &:focus
+    text-decoration underline
+
 // mixins
 content-container(padding = gutterLarge, maxWidth = maxWidthLarge)
   max-width maxWidth
@@ -55,3 +65,4 @@ emphasizedBody(fontSize)
 @require "hero"
 @require "panels"
 @require "footer"
+@require "form"

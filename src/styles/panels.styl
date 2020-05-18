@@ -10,7 +10,7 @@
   +above('tablet')
     padding 80px 0 120px 0
   +above('desktop')
-    padding 100px 0 120px 0
+    padding 120px 0 140px 0
 
   &__wrapper
     margin 0 gutterLarge
@@ -88,7 +88,7 @@
   +above('tablet')
     padding 40px 0 100px 0
   +above('desktop')
-    padding 40px 0 80px 0
+    padding 60px 0 80px 0
 
   &__wrapper
     margin 0 gutterLarge
@@ -156,24 +156,34 @@
 .insights
   background-color white
   color darkTeal
-  padding 60px 0
+  padding 60px gutterLarge
+  max-width maxWidthSmall
+  display flex
+  flex-direction column
+  margin 0 auto
   +above('tablet')
-    padding 40px 0 80px 0
+    padding 40px gutterLarge 80px gutterLarge
   +above('desktop')
-    padding 60px 0 100px 0
+    padding 60px gutterLarge 100px gutterLarge
+    flex-direction row
+    align-items flex-end
 
-  &__content
-    margin 0 gutterLarge
-    +above('tablet')
-      margin 0 auto
-      max-width 600px
+
+  &__wrapper
+    max-width 600px
+    &:last-child
+      text-align center
+    +above('desktop')
+      &:first-child
+        margin-right 40px
+      &:last-child
+        margin-left 40px
 
   &__headline
-    margin 12px gutterLarge 0 gutterLarge
+    margin 12px 0 0 0
     headline(30px)
     +above('tablet')
       font-size 44px
-      text-align center
       margin 32px 0
     +above('desktop')
       font-size 52px
@@ -191,6 +201,13 @@
       font-size 20px
       margin 20px 0
 
+  &__image
+    width 60%
+    height auto
+    margin-top 32px
+    +above('tablet')
+      width 400px
+
 
 
 /*** TEAM section ***/
@@ -203,7 +220,7 @@
   +above('tablet')
     padding 40px gutterLarge 100px gutterLarge
   +above('desktop')
-    padding 40px gutterLarge 80px gutterLarge
+    padding 60px gutterLarge 80px gutterLarge
     background-image linear-gradient(90deg, rgba(darkBlue, 0.85), rgba(teal, 0.85)), url("images/background/earth-patterns-unsplash.jpg")
 
   &__wrapper
@@ -310,18 +327,50 @@
 
 /*** Get Involved section ***/
 .participate
-  padding 40px gutterLarge
-
-  &__wrapper
-    margin 0 auto
-    max-width maxWidthLarge
+  padding 40px gutterLarge 60px gutterLarge
+  color darkTeal
+  max-width maxWidthSmall
+  margin 0 auto
+  display flex
+  flex-direction column
+  +above('tablet')
+    padding 80px gutterLarge 140px gutterLarge
+  +above('desktop')
+    flex-direction row
+    align-items flex-end
+    &__wrapper
+      flex-basis 50%
+      &:first-child
+        margin-right 40px
+      &:last-child
+        margin-left 40px
 
   &__headline
     headline(32px)
-    color darkTeal
-    margin 40px 0
+    margin 20px 0
     +above('tablet')
       font-size 44px
       margin 32px 0
     +above('desktop')
       font-size 52px
+
+  &__subline
+    subline(22px)
+    margin 12px 0
+    +above('tablet')
+      font-size 28px
+
+  &__text
+    emphasizedBody(16px)
+    margin 16px 0
+    max-width 600px
+    +above('tablet')
+      font-size 18px
+      margin 20px 0
+
+  &__roles
+    list-style circle
+    margin-left 40px
+    font-size 18px
+    +above('tablet')
+      font-size 20px

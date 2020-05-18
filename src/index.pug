@@ -70,12 +70,15 @@ html(lang='en')
           .about-us__slogan Open up constructive conversations about the impact of climate change.
             
     .insights
-      h2.insights__headline How will it work?
       .insights__wrapper
+        h2.insights__headline How will it work?
         .insights__content
           .insights__subline Climate Mind consists of a web application and a knowledge base.
           .insights__text The finished product will guide users through the process of personalizing climate conversations with others and responding to common climate change myths. Then it will provide achievable action proposals that align with the values and interests of the user.
           .insights__text The knowledge base will collect knowledge available on climate change and interpret it as sets of concepts and the relationships between them.
+      .insights__wrapper
+        img.insights__image(src="images/app-preview.jpg" alt="ClimateMind app")
+
 
     .team#team
       .team__wrapper
@@ -89,7 +92,7 @@ html(lang='en')
             .card.card--facts
               .card__icon
                 img(src="images/icons/icon-worldwide-connected.svg")
-              .card__description Our team is largely drawn from <a href="https://www.stanford.edu/" target="_blank" class="card__link">Stanford University</a> and coordinated by Kameron Rodriguez.
+              .card__description Our team includes individuals drawn from <a href="https://www.stanford.edu/" target="_blank" class="card__link">Stanford University</a> and coordinated by Kameron Rodrigues.
               .card__description Climate Mind grew out of Kameron’s work with <a href="https://scientistsspeakup.org/" target="_blank" class="card__link">Scientists Speak Up</a>.
             .card.card--facts
               .card__icon
@@ -174,7 +177,21 @@ html(lang='en')
 
     .participate#get-involved
       .participate__wrapper
-        .participate__headline Get involved.
+        .participate__headline How can I&nbsp;get&nbsp;involved?
+        .participate__subline 
+          p Activist, dreamer, do-er? 
+          p Excited, angry, frustrated? 
+          p Developer, talker, tester?
+        .participate__text We are always looking for enthusiastic people to join our international team. No matter where you are in the world, if you can commit two hours a week we can do with your help.
+
+      .participate__wrapper
+        .participate__subline Current roles we are looking for:
+        ul.participate__roles
+          li Back-end developer (Python)
+          li Front-end developer (React)
+          li Social media manager
+        .participate__text Send us an email or get in touch with us on social media. We are happy to hear from you.
+        a(href="mailto:hello@climatemind.org" target="_blank").link hello@climatemind.org
 
     footer.footer
       .footer__wave
