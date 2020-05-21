@@ -51,23 +51,27 @@ html(lang='en')
           .teaser__text It can be a real challenge to communicate the realities of climate change to people around you, especially those who have different values and personal interests. 
           .teaser__text Often, people don’t realize actionable solutions already exist that don’t require an overhaul of their personality or beliefs.
         .teaser__subline Our aim is to make conversations about climate change easier.
+        .teaser__next-up
+          img.teaser__next-up-icon(src="images/icons/icon-arrow-down.svg")
       .teaser__decoration
         .teaser__wave-top
         .teaser__wave-bottom
 
     .about-us#about
-      h2.about-us__headline What is Climate Mind?
       .about-us__wrapper
 
         .about-us__content
+          h2.about-us__headline What is Climate&nbsp;Mind?
           .about-us__subline A tool to relate everyone and their lives to the effects of climate change.
-          .about-us__text We are creating a web app that helps users explore how their values and personal interests are vulnerable to the effects of climate change.
+          .about-us__text We are creating a web app that helps users explore how their values and personal interests are being affected by climate change.
           .about-us__text We aim to inspire users to take action with a range of attractive solutions consistent with their values that they can get excited about.
           .about-us__text We are in the early stages of development and are welcoming new people to the team.
+          .about-us__cta
+            a.button(href="#get-involved") Get involved
 
         .about-us__teaser
           img.about-us__icon(src="images/what-is-climateMind.svg")
-          .about-us__slogan Open up constructive conversations about the impact of climate change.
+          .about-us__slogan We want to make constructive conversations about climate change easier.
             
     .insights
       .insights__wrapper
@@ -102,7 +106,7 @@ html(lang='en')
             .card.card--facts
               .card__icon
                 img(src="images/icons/icon-data.svg")
-              .card__description Our data team is building a knowledge base, also called an ontology.
+              .card__description Our data team is building a knowledge base, also called an <a href="https://docs.google.com/document/d/16Ot_5WPNOLUIrLkmusbMVnN827OEJKigrT2B8HP--Jk/edit" class="card__link" target="_blank">ontology</a>.
               .card__description Are you a back-end developer and want to join our team?
               .card__description 
                 a.card__link(href="#get-involved") Get involved
@@ -182,16 +186,21 @@ html(lang='en')
           p Activist, dreamer, do-er? 
           p Excited, angry, frustrated? 
           p Developer, talker, tester?
-        .participate__text We are always looking for enthusiastic people to join our international team. No matter where you are in the world, if you can commit two hours a week we can do with your help.
+        .participate__text.participate__text--align-bottom We are always looking for enthusiastic people to join our international team. No matter where you are in the world, if you can commit two hours a week we can do with your help.
 
       .participate__wrapper
         .participate__subline Current roles we are looking for:
         ul.participate__roles
           li Back-end developer (Python)
           li Front-end developer (React)
-          li Social media manager
+          li Product manager
+          li Information manager
+          li User researcher
+          li Data scientist
+          li User tester
         .participate__text Send us an email or get in touch with us on social media. We are happy to hear from you.
-        a(href="mailto:hello@climatemind.org" target="_blank").link hello@climatemind.org
+        .participate__cta
+          a.button(href="mailto:hello@climatemind.org" target="_blank") Email us
 
     footer.footer
       .footer__wave
@@ -226,8 +235,6 @@ html(lang='en')
           a(href="mailto:hello@climatemind.org" target="_blank").footer__link hello@climatemind.org
           .footer__credit 
             p Made globally for the world.
-            p Open source on 
-              a.footer__link.footer__link--credit(href="https://github.com/climatemind" target="_blank") GitHub
-              | .
+            p Open source project.
 
     script(type='text/javascript', src='app.js')
