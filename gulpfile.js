@@ -17,6 +17,7 @@ var path = {
   html: 'docs/*.html',
   pug: 'src/*.pug',
   js: 'src/javascript/**/*.js',
+  jsEmbeds: 'src/javascript/3rd-party/**/*.js',
   stylesWatch: 'src/styles/**/*.styl',
   stylesInput: 'src/styles/styles.styl',
   output: 'docs',
@@ -39,7 +40,7 @@ gulp.task('styles', function () {
 });
 
 gulp.task('scripts', function() {
-  return gulp.src(path.js)
+  return gulp.src([path.js, '!'+path.jsEmbeds])
     .pipe(concat('app.js'))
     .pipe(gulp.dest(path.output));
 });

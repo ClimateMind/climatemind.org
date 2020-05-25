@@ -18,9 +18,9 @@ html(lang='en')
     meta(name='theme-color' content='#006080')
     script(async src='https://www.googletagmanager.com/gtag/js?id=UA-165706180-1')
     script
-      include javascript/ga.js
+      include javascript/3rd-party/ga.js
     script
-      include javascript/gtm.js
+      include javascript/3rd-party/gtm.js
 
   body
     noscript
@@ -239,3 +239,5 @@ html(lang='en')
             p Open source project.
 
     script(type='text/javascript', src='app.js')
+    script#mcjs
+      include javascript/3rd-party/mailchimp.js
