@@ -66,8 +66,6 @@ html(lang='en')
           .about-us__text We are creating a web app that helps users explore how their values and personal interests are being affected by climate change.
           .about-us__text We aim to inspire users to take action with a range of attractive solutions consistent with their values that they can get excited about.
           .about-us__text We are in the early stages of development and are welcoming new people to the team.
-          .about-us__cta
-            a.button(href="#get-involved") Get involved
 
         .about-us__teaser
           img.about-us__icon(src="images/what-is-climateMind.svg")
@@ -199,10 +197,12 @@ html(lang='en')
           li User researcher
           li Data scientist
           li User tester
-        .participate__text Send us an email or get in touch with us on social media. We are happy to hear from you.
+        .participate__text You got what it takes and are motivated to take action? Then get in touch with us and we will send you more details about how you can join our team.
         .participate__cta
-          a.button(href="mailto:hello@climatemind.org" target="_blank") Email us
-
+          a.button(href="http://eepurl.com/g33DCr" target="_blank") Get involved
+        //.participate__cta
+          include templates/mailchimp.pug
+          
     footer.footer
       .footer__wave
       .footer__content
