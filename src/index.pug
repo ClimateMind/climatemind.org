@@ -174,10 +174,29 @@ html(lang='en')
                 .card__details
                   .person
                     .person__name Anagha Uppal
-                    .person__role Spatial data analyst. California.
+                    .person__role Spatial Data Analyst. California.
                     .person__links
                       a.card__link(href="https://www.linkedin.com/in/anagha-uppal/" target="_blank") LinkedIn
+                      
+              li.card.card--person
+                img.card__image(src="images/team/team_erik.jpg" alt="Erik Håkansson")
+                .card__details
+                  .person
+                    .person__name Erik Håkansson
+                    .person__role Data Scientist. London, UK.
+                    .person__links
+                      a.card__link(href="https://www.linkedin.com/in/erik-h%C3%A5kansson-02ba42134/" target="_blank") LinkedIn
+                      a.card__link(href="https://github.com/Expan75" target="_blank") GitHub
 
+              li.card.card--person
+                img.card__image(src="images/team/team_michael.jpg" alt="Michael Amoroso")
+                .card__details
+                  .person
+                    .person__name Michael Amoroso
+                    .person__role Ontology Analyst. New York.
+                    .person__links
+                      a.card__link(href="https://www.linkedin.com/in/michaelamoroso05/" target="_blank") LinkedIn
+                      
     .participate#get-involved
       .participate__wrapper
         .participate__headline How can I&nbsp;get&nbsp;involved?
@@ -197,11 +216,9 @@ html(lang='en')
           li User researcher
           li Data scientist
           li User tester
-        .participate__text You got what it takes and are motivated to take action? Then get in touch with us and we will send you more details about how you can join our team.
+        .participate__text You got the skills we are looking for and are motivated to take action? Then get in touch with us and we will send you more details about how you can join our team.
         .participate__cta
           a.button(href="http://eepurl.com/g33DCr" target="_blank") Get involved
-        //.participate__cta
-          include templates/mailchimp.pug
           
     footer.footer
       .footer__wave
