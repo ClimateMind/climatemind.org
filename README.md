@@ -1,9 +1,6 @@
 # climatemind.org
 
-Welcome!
-
-We are still at the very beginning. Come back soon to find out more about our endeavours.
-
+Welcome! To find out more about the progress we have already made, have a look at our other Climate Mind repositories: https://github.com/ClimateMind
 
 ## Technical infos
 
@@ -16,3 +13,11 @@ The current setup relies on a legacy version of Node (verion 8.17.0). For the in
 To publish everything, run `gulp publish` and commit the changes (via a pull request) to master.
 
 In the near future we are planning to migrate the entire web app over to React and the latest stable version of Node.
+
+## Update instructions
+
+To update the landing page of climatemind.org, follow the instructions listed under _Technical infos_, change the respective file in the `/src/` folder (e.g. `src/index.pug`), run `gulp`, and commit + push the changes.
+
+## Remarks
+
+Our cloud computing is proudly sponsored by Microsoft through an AI for Earth grant.
