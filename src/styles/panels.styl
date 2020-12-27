@@ -236,6 +236,22 @@
       width 400px
 
 
+/*** SPONSOR section ***/
+.sponsor
+  background-color darkTeal
+  color white
+  &__wrapper
+    max-width maxWidthLarge
+    margin 0 auto
+
+  &__text
+    font-size 18px
+    padding 16px gutterLarge
+    +above('tablet')
+      font-size 20px
+      padding 32px gutterLarge
+      text-align center
+
 
 /*** TEAM section ***/
 .team
@@ -423,3 +439,53 @@
 
     & em
       font-weight 500
+
+.alumni
+  background-color darkTeal
+  color white
+  padding 40px 0
+  +above('tablet')
+    padding 40px 0 100px 0
+  +above('desktop')
+    padding 80px 0 120px 0
+
+  &__wrapper
+    margin 0 gutterLarge
+    display flex
+    flex-direction column
+    +above('tablet')
+      margin 0 auto
+      padding 0 32px
+      max-width maxWidthSmall
+    +above('desktop')
+      padding 0 60px
+
+  &__headline
+    margin 20px 0
+    headline(32px)
+    +above('tablet')
+      font-size 44px
+      margin 32px 0
+    +above('desktop')
+      font-size 52px
+
+  &__list
+    list-style none
+    margin-left 40px
+    font-size 18px
+    +above('tablet')
+      font-size 20px
+      margin-left 52px
+
+    & li
+      color white
+      position relative
+      padding 4px 0
+      &:before
+        content '—'
+        position absolute
+        left -28px
+        +above('tablet')
+          left -32px
+      & em
+        font-weight bold
