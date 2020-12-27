@@ -16,8 +16,8 @@ In the near future we are planning to migrate the entire web app over to React a
 
 ## Update instructions
 
-To update the landing page of climatemind.org, follow the instructions listed under _Technical infos_, change the respective file in the `/src/` folder (e.g. `src/index.pug`), run `gulp`, and commit + push the changes.
+To update the landing page of climatemind.org, change the respective file in the `/src/` folder (e.g. `src/index.pug`), run `gulp` (to start your local dev server), and then commit + push the changes to GitHub. 
 
 ## Remarks
 
-Our cloud computing is proudly sponsored by Microsoft through an AI for Earth grant.
+Our cloud computing is proudly sponsored by Microsoft through an [AI for Earth grant](https://www.microsoft.com/ai/ai-for-earth).
