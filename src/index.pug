@@ -33,6 +33,8 @@ html(lang='en')
       .header__menu
         ul.menu
           li.menu__item
+            a(href="https://app.climatemind.org/" target="_blank").menu__item-link The App
+          li.menu__item
             a(href="#about").menu__item-link About
           li.menu__item
             a(href="#team").menu__item-link Team
@@ -78,8 +80,11 @@ html(lang='en')
           .insights__subline Climate Mind consists of a web application and a knowledge base.
           .insights__text The finished product will guide users through the process of personalizing climate conversations with others and responding to common climate change myths. Then it will provide achievable action proposals that align with the values and interests of the user.
           .insights__text The knowledge base will collect knowledge available on climate change and interpret it as sets of concepts and the relationships between them.
+          a.button(href="https://app.climatemind.org/" target="_blank") Go to the App
       .insights__wrapper
-        img.insights__image(src="images/app-preview.jpg" alt="ClimateMind app")
+        <a href="https://app.climatemind.org/" target="_blank">
+          img.insights__image(src="images/app-preview.jpg" alt="ClimateMind app")
+        </a>
 
     .sponsor
       .sponsor__wrapper
@@ -156,6 +161,16 @@ html(lang='en')
                       a.card__link(href="https://www.linkedin.com/in/eleanor-dashfield" target="_blank") LinkedIn
 
               li.card.card--person
+                img.card__image(src="images/team/team_rohan.jpg" alt="Rohan Wanchoo")
+                .card__details
+                  .person
+                    .person__name Rohan Wanchoo
+                    .person__role Product Owner. Toronto, Canada.
+                    .person__links
+                      a.card__link(href="https://www.linkedin.com/in/rohan-wanchoo-1353a612/" target="_blank") LinkedIn
+                      a.card__link(href="https://rohanwanchoo.wixsite.com/personal" target="_blank") Wix
+
+              li.card.card--person
                 img.card__image(src="images/team/team_andrew.jpg" alt="Andrew Banister")
                 .card__details
                   .person
@@ -163,6 +178,13 @@ html(lang='en')
                     .person__role Analyst. California.
                     .person__links
                       a.card__link(href="https://www.linkedin.com/in/andrewbanister" target="_blank") LinkedIn
+                        
+              li.card.card--person
+                img.card__image(src="images/team/team_johan.jpg" alt="Johan Olsson")
+                .card__details
+                  .person
+                    .person__name Johan Olsson
+                    .person__role Frontend Developer. Uppsala, Sweden.
 
               li.card.card--person
                 img.card__image(src="images/team/team_sean.jpg" alt="Sean Payne")
@@ -173,6 +195,15 @@ html(lang='en')
                     .person__links
                       a.card__link(href="https://www.instagram.com/seanpayne_film/" target="_blank") Instagram
                       a.card__link(href="https://payne.photography/" target="_blank") Website
+                
+              li.card.card--person
+                img.card__image(src="images/team/team_yasmine.jpg" alt="Yasmine Himanen")
+                .card__details
+                  .person
+                    .person__name Yasmine Himanen
+                    .person__role Backend Developer / Python Superfan. Helsinki, Finland.
+                    .person__links
+                      a.card__link(href="https://www.linkedin.com/in/yasmine-himanen/" target="_blank") LinkedIn
 
               li.card.card--person
                 img.card__image(src="images/team/team_lukas.jpg" alt="Lukas Ziegler")
@@ -183,14 +214,7 @@ html(lang='en')
                     .person__links
                       a.card__link(href="https://www.linkedin.com/in/lukasziegler" target="_blank") LinkedIn
                       a.card__link(href="https://twitter.com/ZieglerLukas" target="_blank") Twitter
-                        
-              li.card.card--person
-                img.card__image(src="images/team/team_johan.jpg" alt="Johan Olsson")
-                .card__details
-                  .person
-                    .person__name Johan Olsson
-                    .person__role Frontend Developer. Uppsala, Sweden.
-
+              
               li.card.card--person
                 img.card__image(src="images/team/team_sabrina.jpg" alt="Sabrina Morellato")
                 .card__details
@@ -201,32 +225,43 @@ html(lang='en')
                       a.card__link(href="https://www.linkedin.com/in/sabrinamorellato" target="_blank") LinkedIn
                       a.card__link(href="http://www.sabrinamorellato.com/" target="_blank") Website
 
-                li.card.card--person
-                  img.card__image(src="images/team/team_matt.jpg" alt="Matt Charlton")
-                  .card__details
-                    .person
-                      .person__name Matt Charlton
-                      .person__role Test Automation Engineer. Carlisle, UK.
-                      .person__links
-                        a.card__link(href="https://www.linkedin.com/in/matt-charlton/" target="_blank") LinkedIn
-                
-                li.card.card--person
-                  img.card__image(src="images/team/team_mukut.jpg" alt="Mukut Mukherjee")
-                  .card__details
-                    .person
-                      .person__name Mukut Mukherjee
-                      .person__role NLP Researcher. Princeton, New Jersey.
-                      .person__links
-                        a.card__link(href="https://linkedin.com/in/mukut-mukherjee-5a2049178/" target="_blank") LinkedIn
+              li.card.card--person
+                img.card__image(src="images/team/team_matt.jpg" alt="Matt Charlton")
+                .card__details
+                  .person
+                    .person__name Matt Charlton
+                    .person__role Test Automation Engineer. Carlisle, UK.
+                    .person__links
+                      a.card__link(href="https://www.linkedin.com/in/matt-charlton/" target="_blank") LinkedIn
+              
+              li.card.card--person
+                img.card__image(src="images/team/team_sampath.jpg" alt="Sampath Duddu")
+                .card__details
+                  .person
+                    .person__name Sampath Duddu
+                    .person__role Product Manager. Olympia, WA.
+                    .person__links
+                      a.card__link(href="https://www.linkedin.com/in/sampathduddu" target="_blank") LinkedIn
+                      a.card__link(href="https://twitter.com/sampathduddu" target="_blank") Twitter
+                      
+              li.card.card--person
+                img.card__image(src="images/team/team_shweta.jpg" alt="Shweta Khushu")
+                .card__details
+                  .person
+                    .person__name Shweta Khushu
+                    .person__role ML / NLP Engineer. Toronto, Canada.
+                    .person__links
+                      a.card__link(href="https://www.linkedin.com/in/shweta-khushu/" target="_blank") LinkedIn
+                      a.card__link(href="https://twitter.com/ShwetaKhushu" target="_blank") Twitter
 
-                li.card.card--person
-                  img.card__image(src="images/team/team_michael.jpg" alt="Michael Amoroso")
-                  .card__details
-                    .person
-                      .person__name Michael Amoroso
-                      .person__role Ontology Analyst. New York.
-                      .person__links
-                        a.card__link(href="https://www.linkedin.com/in/michaelamoroso05/" target="_blank") LinkedIn
+              li.card.card--person
+                img.card__image(src="images/team/team_mukut.jpg" alt="Mukut Mukherjee")
+                .card__details
+                  .person
+                    .person__name Mukut Mukherjee
+                    .person__role NLP Researcher. Princeton, New Jersey.
+                    .person__links
+                      a.card__link(href="https://linkedin.com/in/mukut-mukherjee-5a2049178/" target="_blank") LinkedIn
 
               li.card.card--person
                 img.card__image(src="images/team/team_anagha.jpg" alt="Anagha Uppal")
@@ -236,15 +271,56 @@ html(lang='en')
                     .person__role Spatial Data Analyst. California.
                     .person__links
                       a.card__link(href="https://www.linkedin.com/in/anagha-uppal/" target="_blank") LinkedIn
-                
+              
               li.card.card--person
-                img.card__image(src="images/team/team_yasmine.jpg" alt="Yasmine Himanen")
+                img.card__image(src="images/team/team_ben.jpg" alt="Ben Davis")
                 .card__details
                   .person
-                    .person__name Yasmine Himanen
-                    .person__role Backend Developer/Python Superfan. Helsinki, Finland.
+                    .person__name Ben Davis
+                    .person__role DevOps Engineer. Brooklyn, NY.
                     .person__links
-                      a.card__link(href="https://www.linkedin.com/in/yasmine-himanen/" target="_blank") LinkedIn
+                      a.card__link(href="https://www.linkedin.com/in/bengineerdavis/" target="_blank") LinkedIn
+                      a.card__link(href="https://twitter.com/bengineerdavis" target="_blank") Twitter
+
+              li.card.card--person
+                img.card__image(src="images/team/team_alexis.jpg" alt="Alexis Carras")
+                .card__details
+                  .person
+                    .person__name Alexis Carras
+                    .person__role ML Engineer. Athens, Greece.
+                    .person__links
+                      a.card__link(href="https://www.linkedin.com/in/alexis-carras/" target="_blank") LinkedIn
+              
+              li.card.card--person
+                img.card__image(src="images/team/team_jack.jpg" alt="Jack Seagrist")
+                .card__details
+                  .person
+                    .person__name Jack Seagrist
+                    .person__role Content Contributor. California.
+                    .person__links
+                      a.card__link(href="https://www.linkedin.com/in/jackson-seagrist/" target="_blank") LinkedIn
+                      a.card__link(href="https://www.jackseagrist.com/" target="_blank") Website              
+              
+              li.card.card--person
+                img.card__image(src="images/team/team_daniel.jpg" alt="Daniel Michael")
+                .card__details
+                  .person
+                    .person__name Daniel Michael
+                    .person__role Frontend Developer. Rockville Center, NY.
+                    .person__links
+                      a.card__link(href="https://www.linkedin.com/in/daniel-michael-718825155/" target="_blank") LinkedIn
+                      a.card__link(href="https://www.daniel-michael.com/" target="_blank") Website
+
+              li.card.card--person
+                img.card__image(src="images/team/team_anthony.jpg" alt="Anthony Hevia")
+                .card__details
+                  .person
+                    .person__name Anthony Hevia
+                    .person__role NLP Engineer. USA.
+                    .person__links
+                      a.card__link(href="https://www.linkedin.com/in/anthony-hevia/" target="_blank") LinkedIn
+                      a.card__link(href="https://twitter.com/crumbrats" target="_blank") Twitter        
+
 
     .alumni
       .alumni__wrapper
@@ -255,6 +331,7 @@ html(lang='en')
           li <em>Andras Dako</em>, Software Craftsman, Frontend. London, England.
           li <em>Thiyagarajan Angappan</em>, Frontend Engineer. Texas, USA.
           li <em>Tom Deadman</em>, Developer. London.
+          li <em>Michael Amoroso</em>, Ontology Curator, New York.
           li <em>Xavier Trosse</em>, Developer.
           li <em>Elton Law</em>, Canada.
           li <em>Trevor Bakker</em>, California, USA.
@@ -273,16 +350,14 @@ html(lang='en')
       .participate__wrapper
         .participate__subline Current roles we are looking for:
         ul.participate__roles
-          li <em>product manager</em>
-          li <em>senior full stack developer</em>
-          li <em>senior backend developer</em> (Python)
-          li <em>senior frontend developer</em> (React/Typescript)
-          li <em>knowledge engineer</em> (information manager)
+          li <em>mid-level / senior full stack developer</em>
+          li <em>mid-level / senior backend developer</em> (Python)
+          li <em>mid-level / senior frontend developer</em> (React, Typescript)
           li <em>web content curator</em> (knowledgeable about climate change or eager to research and summarize reading)
           li <em>web content editor/writer</em> (good at summarizing and shortening text to be clear and appealing)
           li <em>web content reviewer</em> (copyeditor)
 
-        .participate__text You got the skills we are looking for and are motivated to take action? Then get in touch with us and we will send you more details about how you can join our team.
+        .participate__text Have you got the skills we are looking for and are you motivated to take action? Then get in touch with us and we will send you more details about how you can join our team.
         .participate__cta
           a.button(href="http://eepurl.com/g33DCr" target="_blank") Get involved
           
