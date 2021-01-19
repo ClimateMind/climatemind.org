@@ -6,9 +6,9 @@ Welcome! To find out more about the progress we have already made, have a look a
 
 The current setup relies on a legacy version of Node (verion 8.17.0). For the initial setup make sure to have this version installed and then run the following commands:
 
-`nvm use 8.17.0` (temporary workaround, needed for legacy version of gulp)
-`yarn` (installs the environment)
-`gulp` (starts your local dev server)
+- `nvm use 8.17.0` (temporary workaround, needed for legacy version of gulp)
+- `yarn` (installs the environment)
+- `gulp` (starts your local dev server, in case you don't have gulp installed, refer to the [Gulp Quick Start guide](https://gulpjs.com/docs/en/getting-started/quick-start/#install-the-gulp-command-line-utility))
 
 To publish everything, run `gulp publish` and commit the changes (via a pull request) to master.
 
