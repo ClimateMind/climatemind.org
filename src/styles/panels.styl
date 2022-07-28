@@ -479,21 +479,20 @@
 
   &__list
     list-style none
-    margin-left 40px
     font-size 18px
     +above('tablet')
       font-size 20px
-      margin-left 52px
 
     & li
       color white
       position relative
       padding 4px 0
       &:before
-        content '—'
         position absolute
         left -28px
         +above('tablet')
           left -32px
       & em
         font-weight bold
+    +above('desktop')
+      columns:2
